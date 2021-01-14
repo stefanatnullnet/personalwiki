@@ -1,0 +1,15 @@
+Vim's <leader> key is a way of creating a namespace for commands you want to
+define. Vim already maps most keys and combinations of Ctrl + (some key), so
+<leader>(some key) is where you (or plugins) can add custom behavior.
+
+For example, if you find yourself frequently deleting exactly 3 words and 7
+characters, you might find it convenient to map a command via nmap <leader>d
+3dw7x so that pressing the leader key followed by d will delete 3 words and 7
+characters. Because it uses the leader key as a prefix, you can be (relatively)
+assured that you're not stomping on any pre-existing behavior.
+
+The default key for <leader> is \, but you can use the command 
+
+`:let mapleader =","` 
+
+to remap it to another key (, in this case).

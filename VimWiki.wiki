@@ -1,0 +1,65 @@
+[[VimWiki]] is a personal wiki for [[vim]] -- a number of linked text files that have
+their own syntax highlighting. See the VimWiki Wiki for an example website
+built with VimWiki!
+
+For the latest features and fixes checkout the dev branch. If you are
+interested in contributing see this section.
+
+= With VimWiki, you can: =
+
+* Organize notes and ideas 
+* Manage to-do lists 
+* Write documentation 
+* Maintain a diary 
+* Export everything to HTML 
+
+To do a quick start, press <[[Leader]]>ww (default is \ww) to go to your index 
+wiki file. By default, it is located in ~/vimwiki/index.wiki. 
+
+See :h vimwiki_list for registering a different path/wiki.
+
+Exmp. from init.vim
+
+`let g:vimwiki_list = [{'path': '~/repos/wiki'}]` 
+
+= Basic Markup =
+
+= Header1 =
+== Header2 ==
+=== Header3 ===
+
+
+*bold* -- bold text
+_italic_ -- italic text
+
+[[wiki link]] -- wiki link
+[[wiki link|description]] -- wiki link with description
+
+= Key bindings =
+
+== Normal mode ==
+
+Note: your terminal may prevent capturing some of the default
+bindings listed below. See :h vimwiki-local-mappings for suggestions for
+alternative bindings if you encounter a problem.
+
+=== Basic key bindings ===
+
+<Leader>ww -- Open default wiki index file.
+<Leader>wt -- Open default wiki index file in a new tab.
+<Leader>ws -- Select and open wiki index file.
+<Leader>wd -- Delete wiki file you are in.
+<Leader>wr -- Rename wiki file you are in.
+<Enter> -- Follow/Create wiki link.
+<Shift-Enter> -- Split and follow/create wiki link.
+<Ctrl-Enter> -- Vertical split and follow/create wiki link.
+<Backspace> -- Go back to parent(previous) wiki link.
+<Tab> -- Find next wiki link.
+<Shift-Tab> -- Find previous wiki link.
+
+=== Commands ===
+
+:Vimwiki2HTML -- Convert current wiki link to HTML.
+:VimwikiAll2HTML -- Convert all your wiki links to HTML.
+:help vimwiki-commands -- List all commands.
+:help vimwiki -- General vimwiki help docs.

@@ -1,0 +1,29 @@
+*vim* (/vɪm/ a contraction of Vi IMproved) is a clone, with additions, 
+of Bill Joy's vi text editor program for Unix. Vim's author, Bram Moolenaar, 
+based it on the source code for a port of the Stevie editor to the Amiga and
+released a version to the public in 1991. Vim is designed for use both from 
+a command-line interface and as a standalone application in a graphical user
+interface. 
+
+*neovim* is a fork – with additions – of Vim that strives to improve the
+extensibility and maintainability of Vim. Neovim shares the same
+configuration syntax with Vim; as a result, the same configuration file can be
+used with both editors, although there are minor differences between the exact
+options used between the two. If the added features of Neovim are not used,
+Neovim is compatible with almost all of Vim's features.
+
+The Neovim project was started in 2014, with some Vim community members
+offering early support of the high-level refactoring effort to provide better
+scripting, plugins, and integration with modern GUIs. The project is
+free software and its source code is available on GitHub.
+
+Neovim had a successful fundraiser on 23 March 2014, supporting at least
+one full-time developer. Several frontends are under development, making use of
+Neovim's capabilities.
+
+The Neovim editor is available in Ubuntu's PPAs, and several other package
+managers, making it possible to install on a variety of operating systems.
+
+* [[vim]] Articles
+ * [[Wrap_Existing_Text]] at 80 Characters
+ * [[VimWiki]] - a personal wiki for Vim

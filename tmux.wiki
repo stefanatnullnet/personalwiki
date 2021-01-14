@@ -1,0 +1,42 @@
+tmux is an open-source [[terminal_multiplexer]] for Unix-like operating systems. 
+It allows multiple terminal sessions to be accessed simultaneously in a single
+window. It is useful for running more than one command-line program at the same
+time. It can also be used to detach processes from their controlling terminals,
+allowing remote sessions to remain active without being visible.
+
+= tmux cheatsheet =
+
+start new session:
+`tmux`
+
+Start new tmux session with spec. session name:
+`tmux new -s session_name`
+
+I use a special shell script to run the tmux sessions I work with most
+https://raw.githubusercontent.com/stefanatnullnet/dotfiles/main/scripts/tdots.sh
+
+To attach to an existing session
+`tmux a -t session_name`
+
+List all active sessions:
+`tmux ls`
+
+Kill session:
+`tmux kill-session -t session_name`
+
+Kill all the tmux sessions:
+TODO: search a better way to kill all sessions
+
+
+== [[key_bindings]] ==
+
+To see all the shortcuts keys in tmux simply use CTRL-B ?
+
+
+=== Sessions ===
+
+s  list sessions
+$  name session
+
+
+
